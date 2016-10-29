@@ -27,13 +27,9 @@ h1, h2, h3, h4, h5 {
 
 .header .time {
 	padding: 0px 20px;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 }
 
-.header .time h1 {
+.header .time #time {
 	margin-bottom: 5px;
 }
 
@@ -41,4 +37,17 @@ h1, h2, h3, h4, h5 {
 	text-align: right;
 	margin: 1px;
 	font-size: 30px;
+}
+
+.header .weather #temperature {
+	margin-bottom: 5px;
+}
+
+.header .weather #weather_summary {
+	max-width: 400px;
+}
+
+.header .weather h3 {
+	font-size: 30px;
+	margin: 1px;
 }

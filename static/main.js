@@ -1,1 +1,2 @@
 Clock.init();
+Weather.init();

@@ -14,7 +14,7 @@ var Clock = {
 		var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
 		document.getElementById("time").innerHTML = (hours + ":" + minutes);
-		document.getElementById("dayofweek").innerHTML = days[today.getDay()];
+		document.getElementById("day_of_week").innerHTML = days[today.getDay()];
 		document.getElementById("date").innerHTML = months[today.getMonth()] + " " + today.getMonth();
 	},
 	init: function() {
