@@ -16,14 +16,13 @@ var Weather = {
 			    + apikey + "/" + lat + "," 
 			    + long));
 
-		this.temperature = Math.floor(weather.currently.temperature);
-		this.summary     = weather.hourly.summary;
-
-		console.log(this.temperature);
-		console.log(this.summary);
+		//this.temperature = Math.floor(weather.currently.temperature);
+		//this.summary     = weather.hourly.summary;
+		this.changeText(Math.floor(weather.currently.temperature), weather.hourly.summary, weather.currently.precipIntensity * 10);
 	},
 	changeText: function(temp, summary, rainchance) {
-
+		document.getElementById("temperature").innerHTML     = temp + "°";
+		document.getElementById("weather_summary").innerHTML = summary;
 	},
 	init: function() {
 		this.getCoords();
