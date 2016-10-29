@@ -16,11 +16,25 @@ body {
 	justify-content: space-between;
 }
 
-.header .time {
-	padding: 0px 20px;
-}
-
 .header h1 {
 	font-size: 80px;
 	letter-spacing: 5px;
+}
+
+.header .time {
+	padding: 0px 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.header .time h1 {
+	margin-bottom: 5px;
+}
+
+.header .time h3 {
+	text-align: right;
+	margin: 1px;
+	font-size: 30px;
 }
