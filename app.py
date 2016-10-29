@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
 	return render_template('index.html')
 
-@app.route('/')
+@app.route('/cookies')
 def cookies():
 	return 'Cookies and cream'
 
