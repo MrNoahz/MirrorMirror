@@ -1,3 +1,4 @@
+from subprocess import call
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -12,3 +13,4 @@ def cookies():
 
 if __name__ == '__main__':
 	app.run(debug=True, host='0.0.0.0')
+	call(["chromium-browser", "--kiosk", "http://0.0.0.0:5000"])
