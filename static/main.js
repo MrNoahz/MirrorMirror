@@ -1,5 +1,6 @@
 Clock.init();
 Weather.init();
 
-document.getElementById('black-overlay').className = "hidden";
+$('#black-overlay').toggle('hidden');
+//document.getElementById('black-overlay').className = "hidden";
 console.log("test");
