@@ -15,7 +15,7 @@ var Clock = {
 
 		document.getElementById("time").innerHTML = (hours + ":" + minutes);
 		document.getElementById("day_of_week").innerHTML = days[today.getDay()];
-		document.getElementById("date").innerHTML = months[today.getMonth()] + " " + today.getMonth();
+		document.getElementById("date").innerHTML = months[today.getMonth()] + " " + today.getDate();
 	},
 	init: function() {
 		setInterval(this.tick(), 1000);
