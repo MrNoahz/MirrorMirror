@@ -2,4 +2,12 @@ Clock.init();
 Weather.init();
 
 $('#black-overlay').addClass('transparent');
-new Audio('res/startup.mp3').play();
+var startupSound = document.getElementById("startupSound").play();
+
+if(startupSound !== undefined) {
+	playPromise.then(function() {
+
+	}).catch(function(error) {
+
+	});
+}
