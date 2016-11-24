@@ -25,6 +25,7 @@ var Weather = {
 	changeText: function(temp, summary, rainchance, icon) {
 		document.getElementById("temperature").innerHTML     = temp + "°";
 		document.getElementById("weather_summary").innerHTML = summary;
+		document.getElementById("rain_chance").innerHTML = rainchance + "%";
 		document.getElementById("weather-icon").src = "/static/res/weather-icons/" + icon;
 	},
 	init: function() {

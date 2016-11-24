@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5 {
 	font-size: 30px;
 }
 
+.header .weather {
+	max-width: 350px;
+}
+
 .header .weather #temperature {
 	margin: 5px 0;
 }
@@ -81,9 +85,26 @@ h1, h2, h3, h4, h5 {
 
 .header .weather #weather_summary {
 	max-width: 400px;
+
+	margin-bottom: 10px;
+}
+
+.header .weather #rain_chance {
+	margin-top: 10px;
+}
+
+.header .weather .umbrella {
+	width: 30px;
+	height: 30px;
+
+	margin-right: 8px;
+
+	margin-top: 10px;
 }
 
 .header .weather h3 {
 	font-size: 30px;
 	margin: 1px;
+
+	display: inline;
 }
