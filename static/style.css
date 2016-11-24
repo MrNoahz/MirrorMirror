@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5 {
 	transition: 1s ease-in-out;
 }
 
-#black-overlay.hide {
+#black-overlay.transparent {
 	opacity: 0;
 }
 
