@@ -20,7 +20,7 @@ var Weather = {
 		this.changeText(Math.floor(weather.currently.temperature),
 						weather.hourly.summary, 
 						weather.currently.precipIntensity * 10,
-						this.icons["clear-day"]);//this.icons[weather.currently.icon]);
+						this.icons[weather.currently.icon]);
 	},
 	changeText: function(temp, summary, rainchance, icon) {
 		document.getElementById("temperature").innerHTML     = temp + "°";
